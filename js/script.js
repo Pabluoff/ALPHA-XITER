@@ -27,27 +27,27 @@ function getIPLocation() {
 getIPLocation();
 
 
-// Função para verificar se o ano é bissexto
+
 function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
 
-// Função para atualizar a data na mensagem
+
 function updateProgramDate() {
     const programDateElement = document.getElementById('data');
 
-    // Obter a data atual no fuso horário do Brasil/SP
+    
     const brazilTimeZone = 'America/Sao_Paulo';
     const now = luxon.DateTime.local().setZone(brazilTimeZone);
 
-    // Obter o mês e ano atual
+    
     const currentMonth = now.month;
     const currentYear = now.year;
 
-    // Definir o número máximo de dias para o mês atual
-    let maxDays = 30; // A maioria dos meses tem 30 dias
+    
+    let maxDays = 30; 
 
-    if (currentMonth === 2) { // Fevereiro
+    if (currentMonth === 2) { 
         maxDays = isLeapYear(currentYear) ? 29 : 28;
     } else if ([4, 6, 9, 11].includes(currentMonth)) {
         maxDays = 30;

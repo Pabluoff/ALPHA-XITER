@@ -81,7 +81,7 @@ body {
 
 /* Headline */
 .headline {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     color: #ffffff;
     font-weight: bold;
     max-width: 700px;
@@ -94,9 +94,9 @@ body {
 
 /* Destaque para trechos importantes */
 .highlight-txt {
-    color: #ff0000; /* Cor amarela para destacar o texto */
-    font-weight: bold; /* Destaca visualmente */
-    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.7); /* Adiciona um brilho sutil */
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.7);
     text-transform: uppercase;
 }
 
@@ -105,9 +105,9 @@ body {
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Define a largura máxima no desktop */
-    margin: 0 auto; /* Centraliza o vídeo */
-    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
@@ -115,49 +115,50 @@ body {
 /* Ajustes para telas maiores (desktop) */
 @media (min-width: 769px) {
     .video-container {
-        padding-bottom: 0; /* Remove o espaçamento no desktop */
-        height: auto; /* Permite que o vídeo tenha altura ajustada ao conteúdo */
+        padding-bottom: 0;
+        height: auto;
     }
 }
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .video-container {
-        max-width: 100%; /* No mobile, ocupa toda a largura disponível */
-        padding-bottom: 56.25%; /* Mantém o aspect ratio em telas pequenas */
+        max-width: 100%;
+        padding-bottom: 56.25%;
     }
 }
 
-/* Botão avançado estilo moderno e clean */
+/* Botão  */
 .btn-video {
     display: inline-block;
     padding: 12px 36px;
-    background: transparent; /* Gradiente suave vermelho */
-    color: #ffffff; /* Texto branco */
+    background: transparent;
+    color: #ffffff;
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #ff0000; /* Sem bordas externas */
-    border-radius: 8px; /* Bordas levemente arredondadas */
+    border: 1px solid #ff0000;
+    border-radius: 8px;
     transition: all 0.ss ease;
-    margin-top: 20px; /* Espaço acima do botão */
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2); /* Sombra discreta */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    letter-spacing: 1.5px; /* Espaçamento entre letras */
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     position: relative;
-    overflow: hidden; /* Para efeitos internos */
+    overflow: hidden;
 }
 
 
-/* Hover: efeito sutil */
+
 .btn-video:hover {
-    background: linear-gradient(90deg, #b10000, #b10000); /* Gradiente invertido no hover */
-    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.678); /* Sombra mais intensa */
-    cursor: pointer; /* Cursor de clique */
+    background: linear-gradient(90deg, #b10000, #b10000);
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.678);
+    cursor: pointer;
+    border: none;
 }
 
-/* Efeito de luz ao hover */
+
 .btn-video::before {
     content: '';
     position: absolute;
@@ -172,10 +173,10 @@ body {
 }
 
 .btn-video:hover::before {
-    left: 120%; /* Animação de luz atravessando o botão */
+    left: 120%;
 }
 
-/* Texto sempre acima */
+
 .btn-video span {
     position: relative;
     z-index: 1;
