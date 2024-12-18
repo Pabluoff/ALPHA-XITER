@@ -73,7 +73,7 @@ body {
     padding: 20px;
 }
 
-/* Logo */
+
 .logo-container {
     margin: 10px 0;
     margin-top: -20px;
@@ -84,7 +84,7 @@ body {
     height: auto;
 }
 
-/* Headline */
+
 .headline {
     font-size: 2.3rem;
     color: #ffffff;
@@ -97,7 +97,7 @@ body {
     padding-bottom: 20px;
 }
 
-/* Destaque para trechos importantes */
+
 .highlight-txt {
     color: #ff0000;
     font-weight: bold;
@@ -105,7 +105,7 @@ body {
 }
 
 
-/* Video container */
+
 .video-container {
     position: relative;
     width: 100%;
@@ -116,7 +116,7 @@ body {
     overflow: hidden;
 }
 
-/* Ajustes para telas maiores (desktop) */
+
 @media (min-width: 769px) {
     .video-container {
         padding-bottom: 0;
@@ -124,7 +124,7 @@ body {
     }
 }
 
-/* Ajustes para telas menores */
+
 @media (max-width: 768px) {
     .video-container {
         max-width: 100%;
@@ -132,7 +132,7 @@ body {
     }
 }
 
-/* Botão  */
+
 .btn-video {
     display: inline-block;
     padding: 12px 36px;
@@ -189,7 +189,7 @@ body {
 .scroller {
     max-width: 2000px;
     margin: 0 auto;
-    /* Centraliza horizontalmente */
+   
 }
 
 .scroller__inner {
@@ -314,7 +314,7 @@ body {
     position: relative;
 }
 
-/* Efeitos responsivos */
+
 @media (max-width: 1024px) {
     .card-container {
         flex-direction: column;
@@ -353,7 +353,7 @@ body {
     margin: 0 auto;
 }
 
-/* Seção principal do carrossel */
+
 .carousel {
     width: 100%;
     max-width: 980px;
@@ -364,17 +364,17 @@ body {
     text-align: center;
 }
 
-/* Estilos do cabeçalho do carrossel */
+
 .carousel-header {
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* Permite quebra em telas menores */
+   
 }
 
-/* Subtítulo do carrossel */
+
 .carousel-subtitle {
     font-size: 3em;
     color: #ffffff;
@@ -385,7 +385,7 @@ body {
     position: relative;
 }
 
-/* Imagem abaixo do subtítulo */
+
 .carousel-banner {
     width: 126px;
     height: auto;
@@ -393,7 +393,7 @@ body {
 }
 
 
-/* Swiper Container */
+
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -401,7 +401,7 @@ body {
     overflow: hidden;
 }
 
-/* Estilos dos slides */
+
 .swiper-slide img {
     width: auto;
     max-width: 100%;
@@ -418,179 +418,132 @@ body {
     object-fit: cover;
 }
 
-/* Price */
-.pricing {
-    background-color: #000000;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 1.6em;
-    margin-top: -30px;
-}
-
-.pricing-container {
+.container-price {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    background-color: #000;
+    padding: 3rem 1rem;
 }
 
-.pricing-card {
-    background: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    max-width: 300px;
-    width: 100%;
+.price-card {
+    background: linear-gradient(180deg, #1a0000, #300000);
+    border: 2px solid #ff3333;
+    border-radius: 10px;
+    padding: 2.5rem;
+    width: 350px;
     text-align: center;
-    color: #ffffff;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border: #cd0c0c 1px solid;
-}
-
-.pricing-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px #00000033;
-}
-
-.pricing-card h3 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-.pricing-card .price {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.pricing-card .price span {
-    font-size: 0.5em;
-}
-
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.pricing-card ul li {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #cccccc;
-    display: flex;
-    align-items: center;
-}
-
-.pricing-card ul li ion-icon {
-    margin-right: 10px;
-    font-size: 1.2em;
-}
-
-.pricing-card .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    color: #ffffff;
-    background-color: #be0505;
-    text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s, border-color 0.3s;
-    white-space: nowrap;
-}
-
-.pricing-card .btn:hover {
-    background-color: #d52828;
-}
-
-.pricing-card .btn ion-icon {
-    margin-left: 8px;
-    font-size: 1.2em;
-}
-
-/* Advanced Card Styles */
-.pricing-card.advanced {
-    position: relative;
-    background: #0f0f12;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: none;
-}
-
-.advanced .ribbon {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.advanced .ribbon::before {
-    content: 'Recomendado';
-    position: absolute;
-    width: 150%;
-    height: 40px;
-    background: #ff0000;
-    transform: rotate(45deg) translateY(-20px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: 600;
     color: #fff;
-    letter-spacing: 0.1em;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-.advanced .ribbon::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-    height: 10px;
-    background: #840000;
-    z-index: -1;
-    box-shadow: -140px -140px #840000;
+.card-title {
+    font-size: 3.3rem;
+    color: #fff;
 }
 
-.pricing-card.advanced h3,
-.pricing-card.advanced .price,
-.pricing-card.advanced ul li {
-    color: #ffffff;
+.card-subtitle {
+    color: #ff3333;
+    font-size: 3rem;
+    margin: 0.5rem 0 1.5rem 0;
 }
 
-.btn-additional-info {
-    margin-top: 20px;
-    z-index: 10;
-    font-size: 0.7em;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.card-benefits {
+    list-style: none;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-benefits li {
     display: flex;
-    color: #efeff2;
+    align-items: center;
+    margin-bottom: 0.8rem;
 }
 
-.btn-additional-info ion-icon {
-    margin-right: 5px;
-    font-size: 1.2em;
-    flex-shrink: 0;
+.card-benefits ion-icon {
+    color: #ff3333;
+    margin-right: 0.7rem;
+    font-size: 1.6rem;
 }
 
-@media screen and (max-width: 768px) {
-    .pricing-container {
-        flex-direction: column;
-        align-items: center;
+.bonus {
+    color: #ff5555;
+}
+
+.price-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #ff3333;
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.new-price {
+    font-size: 8rem;
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.7);
+    margin-top: -3.6rem;
+}
+
+.buy-button {
+    background: #cc0000;
+    color: #fff;
+    border: none;
+    font-size: 2.2rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease, transform 0.2s;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+.buy-button:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
-/*faq - Dark Mode*/
+.btn-additional-info {
+    margin-top: 2.5rem;
+    font-size: 1,6rem;
+    text-align: center;
+    color: #efeff2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-additional-info ion-icon {
+    margin-right: 8px;
+    font-size: 1.5rem;
+}
+    
+
 .faq {
     color: #fff;
     padding: 20px;
@@ -680,7 +633,7 @@ body {
     }
 }
 
-/*Footer*/
+
 .footer {
     background-color: #0e0e0e;
     color: #fff;
@@ -727,7 +680,7 @@ body {
 }
 
 
-/* Subheadline */
+
 .subheadline-painel {
     font-size: 1.8rem;
     font-weight: bold;
@@ -735,23 +688,23 @@ body {
     color: #ffffff;
 }
 
-/* Imagem */
+
 .painel img {
-    width: 80%; /* Ajusta a largura da imagem */
+    width: 80%;
     max-width: 400px;
     margin: 10px auto;
     border-radius: 8px;
 }
 
-/* Seta */
+
 .arrow-icon {
     margin-top: 20px;
     font-size: 3.5rem;
-    color: #ffffff; /* Cor da seta */
+    color: #ffffff;
     animation: bounce 1.5s infinite;
 }
 
-/* Animação da seta */
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
