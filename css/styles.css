@@ -530,18 +530,29 @@ body {
 }
 
 .btn-additional-info {
-    margin-top: 2.5rem;
-    font-size: 1,6rem;
-    text-align: center;
-    color: #efeff2;
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+}
+
+.btn-additional-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    color: #a4a4a4;
 }
 
 .btn-additional-info ion-icon {
-    margin-right: 8px;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #a4a4a4;
+}
+
+.btn-additional-info .info-item span {
+    text-align: left;
+    line-height: 1.1;
 }
 
 .headline-container {
