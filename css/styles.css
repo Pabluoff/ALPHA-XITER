@@ -723,7 +723,7 @@ body {
 }
 
 .notification {
-    background: #4caf50;
+    background: #3c913f;
     border: 1px solid #0e7e12;
     border-radius: 8px;
     padding: 1rem;
@@ -743,6 +743,7 @@ body {
 .notification-text {
     font-size: 1.3rem;
     color: #e8e8e8;
+    font-weight: bold;
 
 }
 
