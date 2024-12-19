@@ -127,3 +127,40 @@ var swiper = new Swiper('.swiper-container', {
         });
     });
 });
+
+const names = [
+    "Matheus", "Carlos", "Ana", "João", "Maria", "Lucas", "Gabriela", 
+    "Fernando", "Beatriz", "Paulo", "Rafael", "Bruno", "Diego", "Vinícius", 
+    "Ricardo", "Gustavo", "Henrique", "Eduardo", "Tiago", "Rodrigo"
+];
+const plans = ["1 MÊS", "3 MESES", "PERMANENTE"];
+
+function generateNotification() {
+    const name = names[Math.floor(Math.random() * names.length)];
+    const plan = plans[Math.floor(Math.random() * plans.length)];
+    const container = document.querySelector('.notification-container');
+    
+    // Cria o elemento da notificação
+    const notification = document.createElement('div');
+    notification.classList.add('notification');
+    notification.innerHTML = `
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <span class="notification-text">${name.toUpperCase()} COMPROU PAINEL ALPHA ${plan}</span>
+    `;
+    
+    // Adiciona a notificação ao container
+    container.appendChild(notification);
+
+    // Remove a notificação após 5 segundos
+    setTimeout(() => {
+        notification.remove();
+    }, 5000);
+}
+
+// Configura a primeira notificação para um tempo aleatório entre 3 a 10 segundos
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(generateNotification, Math.random() * (10000 - 3000) + 3000);
+});
+
+// Gera notificações subsequentes a cada 7-15 segundos
+setInterval(generateNotification, Math.random() * (15000 - 7000) + 7000);
