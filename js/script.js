@@ -163,20 +163,32 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-setInterval(generateNotification, Math.random() * (15000 - 7000) + 7000);
 
+
+// Gera um valor inicial aleatório 
+let currentViewerCount = Math.floor(Math.random() * (240 - 34 + 1)) + 34;
 
 function updateViewerCount() {
     const viewerCountElement = document.getElementById('viewer-count');
     
+    const isIncreasing = Math.random() < 0.5; 
+    const changeAmount = isIncreasing
+        ? Math.floor(Math.random() * (26 - 3 + 1)) + 3 
+        : Math.floor(Math.random() * (12 - 3 + 1)) + 3;
     
-    const randomViewers = Math.floor(Math.random() * (2500 - 100 + 1)) + 100;    
-    
-    viewerCountElement.textContent = randomViewers;
-}
+    if (isIncreasing) {
+        currentViewerCount = Math.min(currentViewerCount + changeAmount, 1896); // Não ultrapassa 1896
+    } else {
+        currentViewerCount = Math.max(currentViewerCount - changeAmount, 34); // Não desce abaixo de 34
+    }
 
+    // Atualiza o texto no elemento
+    viewerCountElement.textContent = currentViewerCount;
+}
 
 setInterval(updateViewerCount, Math.random() * (10000 - 5000) + 5000);
 
-
-document.addEventListener("DOMContentLoaded", updateViewerCount);
+document.addEventListener("DOMContentLoaded", () => {
+    const viewerCountElement = document.getElementById('viewer-count');
+    viewerCountElement.textContent = currentViewerCount;
+});
