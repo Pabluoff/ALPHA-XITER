@@ -76,11 +76,12 @@ body {
 
 .logo-container {
     margin: 10px 0;
-    margin-top: -20px;
+    margin-top: -60px;
+    margin-bottom: -12px;
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
@@ -503,7 +504,7 @@ body {
     width: 100%;
     border-radius: 15px;
     cursor: pointer;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     text-align: center;
     display: inline-block;
     transition: all 0.3s ease, transform 0.2s;
@@ -542,14 +543,102 @@ body {
     margin-right: 8px;
     font-size: 1.5rem;
 }
+
+.headline-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.headline-pricing-topo {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.subheadline-pricing-card {
+    font-size: 2.7rem;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin-bottom: -3rem;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+@media (max-width: 767px) {
+    .headline-pricing-topo {
+        margin-bottom: 2rem;
+    }
+
+    .container-price {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .headline-pricing-topo {
+        margin-bottom: 4rem;
+    }
+
+    .container-price {
+        flex-direction: column;
+        align-items: center;
+    }
+}
     
+.title-image {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o container */
+    height: auto;    /* Mantém a proporção da imagem */
+    display: inline-block;
+    margin: 0 auto;  /* Centraliza a imagem */
+}
+
+.garantia-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    border: solid 1px #292929;
+}
+
+.garantia-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.garantia-txt {
+    font-family: 'Arial', sans-serif;
+    color: #8d8d8d;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    max-width: 600px;
+}
+
+
+.sem-treta {
+    color: #797979;
+    font-style: italic;
+    font-weight: 300;
+}
+
 
 .faq {
     color: #fff;
     padding: 20px;
     text-align: left;
     margin: 0 auto;
-    background: #070707;
 }
 
 .faq h2 {
@@ -769,3 +858,14 @@ body {
         opacity: 0;
     }
 }
+
+.live-viewers {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
