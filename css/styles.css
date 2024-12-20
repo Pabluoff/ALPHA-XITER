@@ -736,29 +736,56 @@ body {
 .btn-duvidas {
     margin-top: 30px;
     padding: 15px 25px;
-    background: linear-gradient(135deg, #2c2c2c, #181818);
-    border: none;
+    background: transparent;
+    border: 2px solid #ff0000;
     border-radius: 16px;
-    color: #fff;
+    color: #cdcdcd;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
     display: block;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 4px 10px rgba(44, 44, 44, 0.5);
-    transition: all 0.3s ease;
-    text-align: center;
-    text-decoration: none;
-    text-align: center;
-    white-space: nowrap;
-    
+    transition: all 0.3s ease, transform 0.3s ease;
+    animation: animate-outline 1s ease-out infinite;
+    position: relative;
 }
 
 .btn-duvidas:hover {
-    background: linear-gradient(135deg, #1b1b1b, #161616);
-    box-shadow: 0 6px 15px rgba(65, 65, 65, 0.7);
+    background: linear-gradient(90deg, #b10000, #b10000);
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.7);
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.btn-duvidas ion-icon {
+    font-size: 1.8rem;
+    color: #cdcdcd;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: all 0.3s ease, color 0.3s ease;
+}
+
+.btn-duvidas:hover ion-icon {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+@keyframes animate-outline {
+    from {
+        outline: 0px solid #ff0000;
+    }
+
+    to {
+        outline: 14px solid #f94ff600;
+    }
 }
 
 
